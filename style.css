@@ -1,0 +1,33 @@
+body{
+    color: aliceblue;
+    background-color: pink;
+    border: dashed 2px black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+
+
+}
+.heading{
+    width:100%;
+    font-size: 25px;
+    
+}
+#camera{
+    border: black 2px dashed;
+    width:350px;
+    height:300px;
+
+
+}
+.name_of_objects,#result_object_name,#result_object_accuracy{
+    color:purple;
+}
+p{
+    color:purple;
+}
+label{
+font-size: 20px;
+}
