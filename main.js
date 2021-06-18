@@ -19,3 +19,21 @@ function modelLoaded()
 {
   console.log("model is loaded");  
 }
+function check()
+{
+  img=document.getElementById("capture_image");
+  classifier.classify(img,gotResult);
+}
+function gotResult(error,result)
+{
+  if (error)
+  {
+    console.error(error);
+  }
+  else{
+    console.log(result);
+    document.getElementById("result_object_name").innerHTML=result[0].label;
+    document.getElementById("result_object_accuracy").innerHTML=result[0].confidence.toFixed(3);
+
+  }
+}
